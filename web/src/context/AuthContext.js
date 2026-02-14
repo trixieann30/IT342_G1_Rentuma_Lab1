@@ -69,7 +69,6 @@ export const AuthProvider = ({ children }) => {
    */
   const login = useCallback(async (username, password) => {
     setError(null);
-    setLoading(true);
 
     try {
       // Try to import api dynamically to avoid issues during testing
@@ -78,10 +77,12 @@ export const AuthProvider = ({ children }) => {
 
       // Handle different response formats from backend
       // Backend returns: { token, username, email }
-      const { token: authToken, username, email, user: userData } = response;
+      const authToken = response.token;
+      const respUsername = response.username;
+      const respEmail = response.email;
 
       // Build user payload from response - handle both nested and flat formats
-      const userPayload = userData || { username, email };
+      const userPayload = response.user || { username: respUsername, email: respEmail };
 
       // Store auth data
       localStorage.setItem('token', authToken);
@@ -110,8 +111,6 @@ export const AuthProvider = ({ children }) => {
 
       setError(err.message);
       throw err;
-    } finally {
-      setLoading(false);
     }
   }, []);
 
@@ -122,15 +121,30 @@ export const AuthProvider = ({ children }) => {
    */
   const register = useCallback(async (userData) => {
     setError(null);
-    setLoading(true);
 
     try {
       const { api } = await import('../services/api');
       const response = await api.register(userData);
 
-      // Handle different response formats from backend
-      const { token: authToken, user: userDataObj, ...rest } = response;
+      // Backend register returns { message: "..." } without a token
+      // So we auto-login after successful registration
+      if (!response.token) {
+        // Auto-login with the same credentials
+        const loginResponse = await api.login(userData.username, userData.password);
+        const authToken = loginResponse.token;
+        const userPayload = loginResponse.user || { username: loginResponse.username, email: loginResponse.email };
 
+        localStorage.setItem('token', authToken);
+        localStorage.setItem('user', JSON.stringify(userPayload));
+
+        setToken(authToken);
+        setUser(userPayload);
+
+        return userPayload;
+      }
+
+      // If backend does return a token directly
+      const { token: authToken, user: userDataObj, ...rest } = response;
       const userPayload = userDataObj || rest;
 
       localStorage.setItem('token', authToken);
@@ -143,8 +157,6 @@ export const AuthProvider = ({ children }) => {
     } catch (err) {
       setError(err.message);
       throw err;
-    } finally {
-      setLoading(false);
     }
   }, []);
 
