@@ -1,0 +1,118 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.it342.g1.rentuma"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml
+10
+11    <!-- Network permission -->
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:6:5-67
+12-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:6:22-64
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:7:5-79
+13-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:7:22-76
+14
+15    <permission
+15-->[androidx.core:core:1.9.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
+16        android:name="com.it342.g1.rentuma.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+16-->[androidx.core:core:1.9.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:23:9-81
+17        android:protectionLevel="signature" />
+17-->[androidx.core:core:1.9.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:24:9-44
+18
+19    <uses-permission android:name="com.it342.g1.rentuma.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+19-->[androidx.core:core:1.9.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:5-97
+19-->[androidx.core:core:1.9.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
+20
+21    <application
+21-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:9:5-42:19
+22        android:allowBackup="true"
+22-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:10:9-35
+23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+23-->[androidx.core:core:1.9.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\ec4f76f6c0c02de8ba18086e7bd9baf5\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
+24        android:debuggable="true"
+25        android:extractNativeLibs="false"
+26        android:icon="@mipmap/ic_launcher"
+26-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:11:9-43
+27        android:label="@string/app_name"
+27-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:12:9-41
+28        android:networkSecurityConfig="@xml/network_security_config"
+28-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:17:9-69
+29        android:roundIcon="@mipmap/ic_launcher_round"
+29-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:13:9-54
+30        android:supportsRtl="true"
+30-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:14:9-35
+31        android:testOnly="true"
+32        android:theme="@style/Theme.Rentuma"
+32-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:15:9-45
+33        android:usesCleartextTraffic="true" >
+33-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:16:9-44
+34
+35        <!-- Login Activity (Launcher) -->
+36        <activity
+36-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:21:9-29:20
+37            android:name="com.it342.g1.rentuma.activities.LoginActivity"
+37-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:22:13-53
+38            android:exported="true"
+38-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:23:13-36
+39            android:windowSoftInputMode="adjustResize" >
+39-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:24:13-55
+40            <intent-filter>
+40-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:25:13-28:29
+41                <action android:name="android.intent.action.MAIN" />
+41-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:26:17-69
+41-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:26:25-66
+42
+43                <category android:name="android.intent.category.LAUNCHER" />
+43-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:27:17-77
+43-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:27:27-74
+44            </intent-filter>
+45        </activity>
+46
+47        <!-- Register Activity -->
+48        <activity
+48-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:32:9-35:58
+49            android:name="com.it342.g1.rentuma.activities.RegisterActivity"
+49-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:33:13-56
+50            android:exported="false"
+50-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:34:13-37
+51            android:windowSoftInputMode="adjustResize" />
+51-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:35:13-55
+52
+53        <!-- Dashboard Activity -->
+54        <activity
+54-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:38:9-40:40
+55            android:name="com.it342.g1.rentuma.activities.DashboardActivity"
+55-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:39:13-57
+56            android:exported="false" />
+56-->C:\Users\L13Y09W32\IT342_G1_Rentuma_Lab1\mobile\app\src\main\AndroidManifest.xml:40:13-37
+57
+58        <provider
+58-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+59            android:name="androidx.startup.InitializationProvider"
+59-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:25:13-67
+60            android:authorities="com.it342.g1.rentuma.androidx-startup"
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:26:13-68
+61            android:exported="false" >
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:27:13-37
+62            <meta-data
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+63                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:30:17-75
+64                android:value="androidx.startup" />
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\L13Y09W32\.gradle\caches\transforms-3\27ea2d1fe40306b6a6ebc7514e2ae640\transformed\jetified-emoji2-1.2.0\AndroidManifest.xml:31:17-49
+65            <meta-data
+65-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\L13Y09W32\.gradle\caches\transforms-3\1d1173f99a1313055c26367e9296308a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+66                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+66-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\L13Y09W32\.gradle\caches\transforms-3\1d1173f99a1313055c26367e9296308a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+67                android:value="androidx.startup" />
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\L13Y09W32\.gradle\caches\transforms-3\1d1173f99a1313055c26367e9296308a\transformed\jetified-lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+68        </provider>
+69    </application>
+70
+71</manifest>

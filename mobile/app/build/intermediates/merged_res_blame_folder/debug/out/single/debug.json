@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/layout_activity_register.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/layout/activity_register.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_avatar_circle.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_avatar_circle.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/xml_network_security_config.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/xml/network_security_config.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_card_modern.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_card_modern.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_profile_card.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_profile_card.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_button_primary.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_button_primary.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/layout_activity_dashboard.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/layout/activity_dashboard.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_profile_card_modern.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_profile_card_modern.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/layout_activity_login.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/layout/activity_login.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_card.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_card.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_stat_card.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_stat_card.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_auth_gradient.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_auth_gradient.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/drawable_bg_status_active.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/drawable/bg_status_active.xml"
+    },
+    {
+        "merged": "com.it342.g1.rentuma.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.it342.g1.rentuma.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    }
+]

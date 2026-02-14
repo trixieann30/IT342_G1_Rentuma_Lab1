@@ -1,6 +1,6 @@
 package com.it342.g1.backend.dto;
 
-import jakarta.validation.constraints.NotBlank;
+import javax.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
